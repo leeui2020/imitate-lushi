@@ -1,0 +1,11 @@
+import Vue from 'vue'
+// import style from './index.module.scss'
+
+export default Vue.extend({
+  name: 'app-<%= name %>',
+  render () {
+    return (
+      <div><%= name %></div>
+    )
+  }
+})
