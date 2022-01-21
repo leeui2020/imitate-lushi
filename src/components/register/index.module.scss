@@ -1,0 +1,15 @@
+.content {
+  background: url("~@/assets/images/bg-register-nor.png") no-repeat center;
+
+  &Img {
+    top: -33px;
+    left: 30px;
+    position: absolute;
+  }
+
+  &Btn {
+    bottom: 40px;
+    position: absolute;
+    z-index: 2;
+  }
+}

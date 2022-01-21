@@ -1,0 +1,12 @@
+.content {
+  & > p {
+    color: #43280e;
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+  }
+
+  & > :not(:last-child) {
+    margin-bottom: 3px;
+  }
+}

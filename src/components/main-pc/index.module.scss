@@ -1,0 +1,81 @@
+@media only screen and (max-width: 768px) {
+  .main {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    background-size: 2500px;
+
+    &Inner {
+      transform: scale(0.9);
+    }
+  }
+}
+
+.main {
+  height: 1000px;
+  padding-top: 420px;
+  box-sizing: border-box;
+  background-image: url("~@/assets/images/bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  max-width: 2600px;
+  margin: auto;
+
+  &Inner {
+    $width: 1327px;
+    left: 50%;
+    width: $width;
+    height: 507px;
+    background: url("~@/assets/images/main-bg.png") no-repeat center;
+    position: relative;
+    margin-left: #{-$width * 0.5};
+  }
+
+  &Enter {
+    top: -9px;
+    right: 78px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &Container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+  }
+
+  &Register {
+    width: 444px;
+    height: 309px;
+    margin-top: 86px;
+    margin-left: 24px;
+    box-sizing: border-box;
+    padding: 28px 57px 40px;
+    position: relative;
+  }
+
+  &Download {
+    width: 200px;
+    padding-top: 50px;
+    margin-left: 32px;
+    position: relative;
+  }
+
+  &Banner {
+    width: 440px;
+    padding-top: 88px;
+    padding-left: 43px;
+    position: relative;
+  }
+}
+
+.logo {
+  top: -165px;
+  left: 50%;
+  display: block;
+  position: absolute;
+  margin-left: -177px;
+}

@@ -1,0 +1,46 @@
+.content {
+  background-image: url("~@/assets/images/bg-banner.png");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+
+  &::before {
+    content: '';
+    width: 428px;
+    height: 280px;
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    background: url("~@/assets/images/bg-banner-layer.png") no-repeat center top;
+  }
+
+  &Banner {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+
+  &Item {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &Title {
+    width: 80%;
+    margin: 10px auto 0;
+    z-index: 3;
+    position: relative;
+    color: #54391e;
+    font-size: 22px;
+    text-align: center;
+    white-space: nowrap;
+  }
+}

@@ -32,7 +32,6 @@ export function checkMobileOs () {
 export function updateDeviceConfig () {
   Object.assign(deviceConfig, checkPcOrTouch())
   deviceConfig.os = checkMobileOs()
-  console.info(deviceConfig)
 }
 
 window.addEventListener('resize', updateDeviceConfig)

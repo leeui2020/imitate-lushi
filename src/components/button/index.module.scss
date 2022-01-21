@@ -1,0 +1,48 @@
+@mixin defineButton($width, $height, $color, $position, $focusPosition) {
+  width: $width;
+  height: $height;
+  background-position: $position;
+  color: $color;
+
+  &:hover,
+  &:focus {
+    background-position: $focusPosition;
+  }
+}
+
+%download {
+  width: 207px !important;
+  height: 63px !important;
+  text-indent: -9999px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-image: url("~@/assets/images/btns.png");
+  cursor: pointer;
+
+  &-theme-default {
+    font-size: 20px;
+    font-weight: 700;
+    @include defineButton(241px, 83px, $--color-text-primary, -67px -5px, -67px -104px);
+  }
+
+  &-theme-register {
+    font-size: 20px;
+    @include defineButton(326px, 60px, #fff, -32px -1018px, -32px -1108px);
+  }
+
+  &-theme-download-pc {
+    @include defineButton(inherit, inherit, inherit, -86px -399px, -86px -491px);
+    @extend %download;
+  }
+
+  &-theme-download-mac {
+    @include defineButton(inherit, inherit, inherit, -85px -210px, -85px -308px);
+    @extend %download;
+  }
+}
