@@ -1,0 +1,25 @@
+@mixin defineIcon($name, $position) {
+  .btnIcon-#{$name} {
+    background-position: $position;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+
+  &Icon {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 10px;
+    background: url("~@/assets/images/footer-icons.png");
+  }
+
+  @include defineIcon(question, -6px -7px);
+  @include defineIcon(feedback, -36px -8px);
+  @include defineIcon(join, -8px -32px);
+}

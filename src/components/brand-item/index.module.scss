@@ -1,0 +1,24 @@
+@mixin defineType($name, $w, $h, $p) {
+  &.brandType-#{$name} > .brandLogo {
+    width: $w;
+    height: $h;
+    background-position: $p;
+  }
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  &Logo {
+    display: block;
+    background-image: url("~@/assets/images/business-logo.png");
+  }
+
+  &Email {
+    margin-left: 13px;
+    line-height: 1;
+  }
+
+  @include defineType(nvidia, 95px, 26px, -352px 0);
+}

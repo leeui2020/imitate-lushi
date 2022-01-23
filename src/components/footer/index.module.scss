@@ -1,0 +1,102 @@
+.footer {
+  position: relative;
+  background: url("~@/assets/images/bg-footer-repeat.jpeg") repeat-x;
+  font-size: 12px;
+  line-height: 26px;
+
+  &Wrapper {
+    height: 471px;
+    background: url("~@/assets/images/bg-footer.jpeg") repeat-x 50% 0;
+  }
+
+  &Inner {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  &Business {
+    padding-top: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+
+    &Left {
+      display: flex;
+      align-items: center;
+      & > :not(:last-child) {
+        margin-right: 37px;
+      }
+    }
+
+    &Right {
+      display: flex;
+      align-items: center;
+    }
+
+    &Brand {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &Split {
+    margin: 0 13px;
+    width: 1px;
+    height: 14px;
+    background: #fff;
+    display: inline-block;
+  }
+
+  &Info {
+    padding-top: 40px;
+    padding-bottom: 8px;
+    position: relative;
+  }
+
+  p {
+    margin: 0;
+    padding-left: 10px;
+    color: #744c2a;
+    line-height: 20px;
+
+    a {
+      color: #744c2a;
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  &Tip {
+    width: 100%;
+    text-align: center;
+    margin-top: 26px;
+  }
+
+  @media only screen and (max-width: 960px) {
+    line-height: 1.2;
+
+    &Wrapper {
+      height: auto;
+    }
+
+    &Inner {
+      width: 100%;
+    }
+
+    &Business {
+      display: none;
+    }
+
+    &Info {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    &Tip {
+      display: none;
+    }
+  }
+}

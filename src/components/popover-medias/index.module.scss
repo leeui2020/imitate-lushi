@@ -1,0 +1,22 @@
+.medias {
+  width: 756px;
+
+  & > a {
+    width: 108px;
+    line-height: 22px;
+    display: inline-block;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  & > .media {
+    text-decoration: none;
+    color: #b5a89f;
+  }
+
+  & > .applyButton {
+    float: right;
+    color: #ea8631;
+  }
+}

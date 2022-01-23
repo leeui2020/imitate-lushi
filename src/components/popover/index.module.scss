@@ -1,0 +1,37 @@
+.popover {
+  position: relative;
+
+  &Trigger {
+    display: flex;
+    align-items: center;
+
+    &Icon {
+      margin-left: 13px;
+    }
+  }
+
+  &Content {
+    top: 100%;
+    right: 0;
+    background: #1f1009;
+    border: 1px solid #261c12;
+    position: absolute;
+    max-height: 0px;
+    visibility: hidden;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &Inner {
+      padding: 8px 0 10px 20px;
+    }
+  }
+
+  &.isOpen &TriggerIcon {
+    transform: rotate(180deg);
+  }
+
+  &.isOpen &Content {
+    max-height: 1000px;
+    visibility: visible;
+  }
+}

@@ -1,0 +1,14 @@
+@mixin defineLogo($name, $w, $h, $img) {
+  &.logoType-#{$name} {
+    width: $w;
+    height: $h;
+    background-image: url("~@/assets/images/logo-#{$img}.png");
+  }
+}
+
+.logo {
+  display: inline-block;
+
+  @include defineLogo(bz, 140px, 80px, blizzard);
+  @include defineLogo(ne, 187px, 38px, ne);
+}

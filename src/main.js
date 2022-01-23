@@ -12,6 +12,7 @@ new Vue({
       <div class="app">
         <div class="app-main">
           <app-main-pc />
+          <app-footer />
         </div>
       </div>
     )
