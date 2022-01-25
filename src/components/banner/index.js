@@ -12,6 +12,10 @@ export default Vue.extend({
     custom: {
       type: Object,
       default: () => ({})
+    },
+    swiperOptions: {
+      type: Object,
+      default: () => ({})
     }
   },
   data () {
@@ -40,7 +44,7 @@ export default Vue.extend({
           <div class={['swiper-wrapper', style.bannerSlide, custom.bannerSlide]}>{slides}</div>
         </div>
 
-        <div class={style.bannerControl}>
+        <div class={[style.bannerControl, custom.bannerControl]}>
           <div class={[style.bannerNavigate, custom.bannerNavigate]}>
             <a class={[style.bannerNavigatePrev]} href="javascript:;" onClick={() => this.swiper.slidePrev()}></a>
             <a class={[style.bannerNavigateNext]} href="javascript:;" onClick={() => this.swiper.slideNext()}></a>
@@ -59,7 +63,8 @@ export default Vue.extend({
         loop: true,
         autoplay: {
           delay: 3000
-        }
+        },
+        ...this.swiperOptions
       })
 
       swiper.on('slideChange', ({ activeIndex }) => (

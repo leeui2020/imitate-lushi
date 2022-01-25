@@ -12,6 +12,7 @@ export default Vue.extend({
           <div class={style.mainActions}>
             <app-button-touch type={this.$device.os} />
           </div>
+          <app-banner-touch style={style.mainBanner} />
         </div>
       </div>
     )
