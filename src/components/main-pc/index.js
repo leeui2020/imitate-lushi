@@ -13,7 +13,6 @@ export default Vue.extend({
           <div class={style.mainContainer}>
             <app-register class={style.mainRegister} />
             <app-download class={style.mainDownload} />
-            <app-banner-pc class={style.mainBanner} />
           </div>
         </div>
       </div>

@@ -1,0 +1,42 @@
+.main {
+  background: #301d17;
+
+  &Container {
+    padding-top: 49.3%;
+    padding-bottom: 20px;
+    background-image: url("~@/assets/images/bg-touch.jpeg");
+    background-size: 100% 100%;
+  }
+
+  &Logo {
+    top: 0;
+    left: 0;
+    position: relative;
+    max-width: 67%;
+    margin: 0 auto;
+
+    & > img {
+      width: 100%;
+    }
+  }
+
+  &Actions {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: -5%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  &Banner {
+    margin-top: 3%;
+  }
+
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
+}
