@@ -14,6 +14,7 @@ new Vue({
           <app-main-pc />
           <app-main-touch />
           <app-footer />
+          <app-user-age />
         </div>
       </div>
     )
