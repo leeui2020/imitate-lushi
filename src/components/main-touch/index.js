@@ -7,12 +7,13 @@ export default Vue.extend({
   render () {
     return (
       <div class={style.main}>
+        <app-header-touch />
         <div class={style.mainContainer}>
           <localLogo class={style.mainLogo} />
           <div class={style.mainActions}>
             <app-button-touch type={this.$device.os} />
           </div>
-          <app-banner-touch style={style.mainBanner} />
+          <app-banner-touch class={style.mainBanner} />
         </div>
       </div>
     )
