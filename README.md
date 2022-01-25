@@ -1,24 +1,26 @@
-# imitate-lushi
+# imitate-lushi 炉石传说官网复刻 -- 前端练习
 
-## Project setup
+### 项目概述
+
+该项目用于自己练习前端技术基础，基于 vue2.x 框架，完成炉石传说官网的简单复刻。
+该项目的特色是使用 jsx + css-module 完成页面搭建，这在平时工作中是不常用到的技术栈。
+
+### 安装依赖
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 开发模式下运行
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 生产模式构建
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 检测并纠正代码规范
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
